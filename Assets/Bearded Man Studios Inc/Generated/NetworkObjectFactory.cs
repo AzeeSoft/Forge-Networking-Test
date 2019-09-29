@@ -35,9 +35,17 @@ namespace BeardedManStudios.Forge.Networking.Generated
 						availableCallback = true;
 						obj = new ExampleProximityPlayerNetworkObject(networker, id, frame);
 						break;
+					case HoverCraftNetworkObject.IDENTITY:
+						availableCallback = true;
+						obj = new HoverCraftNetworkObject(networker, id, frame);
+						break;
 					case NetworkCameraNetworkObject.IDENTITY:
 						availableCallback = true;
 						obj = new NetworkCameraNetworkObject(networker, id, frame);
+						break;
+					case TestCubeNetworkObject.IDENTITY:
+						availableCallback = true;
+						obj = new TestCubeNetworkObject(networker, id, frame);
 						break;
 					case TestNetworkObject.IDENTITY:
 						availableCallback = true;
